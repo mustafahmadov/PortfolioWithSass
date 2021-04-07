@@ -2,11 +2,15 @@
 body {
   background-color: black;
   height: 100vh;
-  cursor: none;
   overflow: hidden;
 }
 
-.typed-strings, .typed-strings1 {
+.modal {
+  z-index: 9999999999999;
+}
+
+.typed-strings,
+.typed-strings1 {
   position: absolute;
 }
 
@@ -457,13 +461,15 @@ a {
 }
 
 @-webkit-keyframes blink {
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
 
 @keyframes blink {
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
@@ -540,8 +546,8 @@ a {
 }
 
 .about-me hr {
-  -webkit-animation: shine 3s ease-in-out  infinite;
-          animation: shine 3s ease-in-out  infinite;
+  -webkit-animation: shine 3s ease-in-out infinite;
+          animation: shine 3s ease-in-out infinite;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   height: 4px !important;
@@ -656,88 +662,88 @@ a {
 
 @keyframes noise-anim {
   0% {
-    -webkit-clip-path: inset(82% 0 13% 0);
-            clip-path: inset(82% 0 13% 0);
+    -webkit-clip-path: inset(88% 0 4% 0);
+            clip-path: inset(88% 0 4% 0);
   }
   5% {
-    -webkit-clip-path: inset(3% 0 12% 0);
-            clip-path: inset(3% 0 12% 0);
+    -webkit-clip-path: inset(75% 0 5% 0);
+            clip-path: inset(75% 0 5% 0);
   }
   10% {
-    -webkit-clip-path: inset(34% 0 53% 0);
-            clip-path: inset(34% 0 53% 0);
+    -webkit-clip-path: inset(42% 0 28% 0);
+            clip-path: inset(42% 0 28% 0);
   }
   15% {
-    -webkit-clip-path: inset(19% 0 10% 0);
-            clip-path: inset(19% 0 10% 0);
+    -webkit-clip-path: inset(59% 0 14% 0);
+            clip-path: inset(59% 0 14% 0);
   }
   20% {
-    -webkit-clip-path: inset(33% 0 9% 0);
-            clip-path: inset(33% 0 9% 0);
+    -webkit-clip-path: inset(5% 0 59% 0);
+            clip-path: inset(5% 0 59% 0);
   }
   25% {
-    -webkit-clip-path: inset(95% 0 1% 0);
-            clip-path: inset(95% 0 1% 0);
+    -webkit-clip-path: inset(63% 0 32% 0);
+            clip-path: inset(63% 0 32% 0);
   }
   30% {
-    -webkit-clip-path: inset(21% 0 27% 0);
-            clip-path: inset(21% 0 27% 0);
+    -webkit-clip-path: inset(16% 0 59% 0);
+            clip-path: inset(16% 0 59% 0);
   }
   35% {
-    -webkit-clip-path: inset(74% 0 9% 0);
-            clip-path: inset(74% 0 9% 0);
+    -webkit-clip-path: inset(99% 0 2% 0);
+            clip-path: inset(99% 0 2% 0);
   }
   40% {
-    -webkit-clip-path: inset(64% 0 23% 0);
-            clip-path: inset(64% 0 23% 0);
+    -webkit-clip-path: inset(55% 0 20% 0);
+            clip-path: inset(55% 0 20% 0);
   }
   45% {
-    -webkit-clip-path: inset(90% 0 1% 0);
-            clip-path: inset(90% 0 1% 0);
+    -webkit-clip-path: inset(16% 0 18% 0);
+            clip-path: inset(16% 0 18% 0);
   }
   50% {
-    -webkit-clip-path: inset(52% 0 35% 0);
-            clip-path: inset(52% 0 35% 0);
+    -webkit-clip-path: inset(97% 0 2% 0);
+            clip-path: inset(97% 0 2% 0);
   }
   55% {
-    -webkit-clip-path: inset(52% 0 47% 0);
-            clip-path: inset(52% 0 47% 0);
+    -webkit-clip-path: inset(8% 0 15% 0);
+            clip-path: inset(8% 0 15% 0);
   }
   60% {
-    -webkit-clip-path: inset(21% 0 49% 0);
-            clip-path: inset(21% 0 49% 0);
+    -webkit-clip-path: inset(53% 0 25% 0);
+            clip-path: inset(53% 0 25% 0);
   }
   65% {
-    -webkit-clip-path: inset(31% 0 35% 0);
-            clip-path: inset(31% 0 35% 0);
+    -webkit-clip-path: inset(90% 0 2% 0);
+            clip-path: inset(90% 0 2% 0);
   }
   70% {
-    -webkit-clip-path: inset(30% 0 24% 0);
-            clip-path: inset(30% 0 24% 0);
+    -webkit-clip-path: inset(40% 0 39% 0);
+            clip-path: inset(40% 0 39% 0);
   }
   75% {
-    -webkit-clip-path: inset(24% 0 14% 0);
-            clip-path: inset(24% 0 14% 0);
+    -webkit-clip-path: inset(42% 0 46% 0);
+            clip-path: inset(42% 0 46% 0);
   }
   80% {
-    -webkit-clip-path: inset(16% 0 13% 0);
-            clip-path: inset(16% 0 13% 0);
+    -webkit-clip-path: inset(41% 0 53% 0);
+            clip-path: inset(41% 0 53% 0);
   }
   85% {
-    -webkit-clip-path: inset(36% 0 42% 0);
-            clip-path: inset(36% 0 42% 0);
+    -webkit-clip-path: inset(40% 0 41% 0);
+            clip-path: inset(40% 0 41% 0);
   }
   90% {
-    -webkit-clip-path: inset(66% 0 8% 0);
-            clip-path: inset(66% 0 8% 0);
+    -webkit-clip-path: inset(29% 0 28% 0);
+            clip-path: inset(29% 0 28% 0);
   }
   95% {
-    -webkit-clip-path: inset(96% 0 5% 0);
-            clip-path: inset(96% 0 5% 0);
+    -webkit-clip-path: inset(7% 0 31% 0);
+            clip-path: inset(7% 0 31% 0);
   }
   100% {
-    -webkit-clip-path: inset(29% 0 54% 0);
-            clip-path: inset(29% 0 54% 0);
+    -webkit-clip-path: inset(9% 0 48% 0);
+            clip-path: inset(9% 0 48% 0);
   }
 }
 
@@ -976,7 +982,8 @@ h1 {
           align-items: center;
 }
 
-.article h1, .article p {
+.article h1,
+.article p {
   line-height: 1.8;
   font-family: "Lora", serif;
   font-size: 35px;
@@ -1026,5 +1033,82 @@ h1 {
 
 .owl-item {
   background-color: #f44336;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: black;
+}
+
+/* Demo Styles */
+.modal-carousel {
+  height: 500px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carousel-area {
+  padding-top: 8%;
+}
+
+.carousel-area .col-lg-4 > .item {
+  margin-top: 5%;
 }
 /*# sourceMappingURL=style.css.map */

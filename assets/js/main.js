@@ -1,68 +1,68 @@
 //  $(document).ready(function(){
-  
+
 //         var mousePos = {};
-      
+
 //        function getRandomInt(min, max) {
 //          return Math.round(Math.random() * (max - min + 1)) + min;
 //        }
-        
+
 //         $(window).mousemove(function(e) {
 //           mousePos.x = e.pageX;
 //           mousePos.y = e.pageY;
 //         });
-        
+
 //         $(window).mouseleave(function(e) {
 //           mousePos.x = -1;
 //           mousePos.y = -1;
 //         });
-        
+
 //         var draw = setInterval(function(){
 //           if(mousePos.x > 0 && mousePos.y > 0){
-            
+
 //             var range = 1;
-            
+
 //             var color = "background: rgb("+getRandomInt(0,255)+","+getRandomInt(0,255)+","+getRandomInt(0,255)+");";
-            
+
 //             var sizeInt = getRandomInt(5, 10);
 //             size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
-            
+
 //             var left = "left: " + getRandomInt(mousePos.x-range-sizeInt, mousePos.x+range) + "px;";
-            
+
 //             var top = "top: " + getRandomInt(mousePos.y-range-sizeInt, mousePos.y+range) + "px;"; 
-      
+
 //             var style = left+top+color+size;
 //             $("<div class='ball' style='" + style + "'></div>").appendTo('#wrapper').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){$(this).remove();}); 
 //           }
 //         }, 1);
 //       });
 const myTags = [
-    'JavaScript', 'CSS3', 'HTML5',
-    'Angular', 'JSON', 'React',
-    'Ajax', 'Asp.Net', 'Asp.Net Core',
-    'Razor Pages', 'Web Services', 'Sql Server','Ms Sql','T-Sql','Web Api','C#','TypeScript',
-    'Entity Framework','Entity Framework Core','Sass','Bootstrap'
-     ];
-var tagCloud = TagCloud('.content', myTags,{
+  'JavaScript', 'CSS3', 'HTML5',
+  'Angular', 'JSON', 'React',
+  'Ajax', 'Asp.Net', 'Asp.Net Core',
+  'Razor Pages', 'Web Services', 'Sql Server', 'Ms Sql', 'T-Sql', 'Web Api', 'C#', 'TypeScript',
+  'Entity Framework', 'Entity Framework Core', 'Sass', 'Bootstrap'
+];
+var tagCloud = TagCloud('.content', myTags, {
 
-    // radius in px
-    radius: 320,
+  // radius in px
+  radius: 320,
 
-    // animation speed
-    // slow, normal, fast
-    maxSpeed: 'fast',
-    initSpeed: 'fast',
+  // animation speed
+  // slow, normal, fast
+  maxSpeed: 'fast',
+  initSpeed: 'fast',
 
-    // 0 = top
-    // 90 = left
-    // 135 = right-bottom
-    direction: 135,
-    
-    // interact with cursor move on mouse out
-    keep: true
-    
-  });
+  // 0 = top
+  // 90 = left
+  // 135 = right-bottom
+  direction: 135,
 
-  let glowInTexts = document.querySelectorAll(".glowIn");
+  // interact with cursor move on mouse out
+  keep: true
+
+});
+
+let glowInTexts = document.querySelectorAll(".glowIn");
 
 // split all text content into letters
 // for each letter, wrap it with a span
@@ -79,23 +79,31 @@ glowInTexts.forEach(glowInText => {
 });
 
 $('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  responsiveClass:true,
-  responsive:{
-      0:{
-          items:1,
-          nav:true
-      },
-      600:{
-          items:3,
-          nav:false
-      },
-      1000:{
-          items:5,
-          nav:true,
-          loop:false
-      }
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    600: {
+      items: 1,
+      nav: false
+    },
+    1000: {
+      items: 1,
+      nav: true,
+      loop: false
+    }
   }
 })
-        
+
+$(document).ready(function () {
+  $("#lightgallery").lightGallery();
+  $(".lightgallery1").lightGallery();
+});
+$('.main-image').click(function () {
+  $(this).next().css("display", "flex");
+  $(this).next().addClass("show");
+})
